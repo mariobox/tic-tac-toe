@@ -45,6 +45,9 @@ function drawBoard(size) {
     var btn = document.createElement('button');
     btn.innerHTML = 'Play Again';
     parent.appendChild(btn); // append Play Again button as child of main div
+    var sCode = document.createElement('p');
+    sCode.innerHTML = '[ <a href="https://github.com/mariobox/tic-tac-toe">Source Code</a> ]';
+    parent.appendChild(sCode); // append link to source code as child of main div
     
 }
 

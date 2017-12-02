@@ -6,6 +6,10 @@ font-family: Helvetica;
 font-size: 20pt;
 }
 
+p {
+font-size: 10pt;
+}
+
 td {
 width: 50px;
 height: 70px;
@@ -39,3 +43,4 @@ button, .button, input[class="submit"] {
   cursor: pointer;
   box-sizing: border-box;
 }
+
