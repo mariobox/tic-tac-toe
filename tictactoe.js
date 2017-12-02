@@ -42,6 +42,10 @@ function drawBoard(size) {
         table.appendChild(row); // append rows as children of table       
     }    
     parent.appendChild(table); // append table as child of main div
+    var btn = document.createElement('button');
+    btn.innerHTML = 'Play Again';
+    parent.appendChild(btn); // append Play Again button as child of main div
+    
 }
 
 // Play!
@@ -62,6 +66,12 @@ function play() { // add event listener for clicks on the board
       turn = 1;
       }
   });
+}
+
+// Play Again
+
+function playAgain() {
+  document.querySelector('button').addEventListener('click', () => { location.reload() })
 }
 
 // Check for possible winner
@@ -85,6 +95,7 @@ function checkWin() {
    
 drawBoard(size);
 play();
+playAgain();
 
 
   
