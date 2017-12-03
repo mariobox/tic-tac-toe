@@ -90,7 +90,12 @@ function checkWin() {
         document.getElementById('message').innerHTML = '<p>X Wins!</p>'; } 
         else { 
           document.getElementById('message').innerHTML = '<p>O Wins!</p>'; };      
-    }
+    } 
+   else {
+     if(xSel.length + oSel.length == 9) {
+       document.getElementById('message').innerHTML = '<p>Nobody Wins. Play Again.</p>'; 
+     }
+   }
   }
 }
 
